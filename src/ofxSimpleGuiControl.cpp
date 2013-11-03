@@ -42,7 +42,7 @@ ofxSimpleGuiControl::ofxSimpleGuiControl(string name) {
 	this->config = &defaultSimpleGuiConfig;
 	setName(name);
 	setKey(key);
-	setPos(0, 0);
+	setPosition(0, 0);
 	lock	  = false;
 	focused	  = false;
 	newColumn = false;
@@ -101,7 +101,7 @@ ofxSimpleGuiControl &ofxSimpleGuiControl::setTextBGColor(bool clickable) {
 }
 
 ofxSimpleGuiControl &ofxSimpleGuiControl::setFullColor(bool forceActive) {
-	if(isMouseDown() || forceActive) ofSetHexColor(config->fullActiveColor);
+	if(isMousePressed() || forceActive) ofSetHexColor(config->fullActiveColor);
 	else if(isMouseOver()) ofSetHexColor(config->fullOverColor);
 	else ofSetHexColor(config->fullColor);
 	return *this;
