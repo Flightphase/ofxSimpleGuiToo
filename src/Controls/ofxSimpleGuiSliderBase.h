@@ -163,7 +163,7 @@ public:
 //		enabled = true;
 
 		//update postion of gui object
-		setPos(x, y);
+		setPosition(x, y);
 
 		//VALUE CLAMP
 		barwidth = ofMap((*value), min, max, 0.0, (float)width);

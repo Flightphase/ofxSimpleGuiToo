@@ -64,7 +64,7 @@ void ofxSimpleGuiTitle::onRelease(int x, int y, int button) {
 }
 
 void ofxSimpleGuiTitle::draw(float x, float y) {
-	setPos(x, y);
+	setPosition(x, y);
 	
 	if(hasTitle == false) return;
 	
